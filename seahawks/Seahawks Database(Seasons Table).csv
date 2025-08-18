@@ -1,0 +1,11 @@
+season_id,year,regular_season_wins,regular_season_losses,playoff_result,division_ranking,notable_achievements
+1,2024,10,7,Wild Card Loss,2,Made playoffs as wild card
+2,2023,9,8,Missed Playoffs,3,Geno Smith Pro Bowl selection
+3,2022,9,8,Wild Card Win,1,"Won NFC West, upset Saints in playoffs"
+4,2021,7,10,Missed Playoffs,3,Russell Wilson injury-shortened season
+5,2020,12,4,Divisional Loss,1,Russell Wilson MVP candidate
+6,2019,11,5,Divisional Loss,1,"Won NFC West, beat Eagles in wild card"
+7,2018,10,6,Wild Card Loss,2,"Chris Carson 1,000+ rushing yards"
+8,2017,9,7,Missed Playoffs,3,Legion of Boom final season
+9,2016,10,5,Divisional Loss,2,Made playoffs as wild card
+10,2015,10,6,Divisional Loss,1,Won NFC West
