@@ -1,0 +1,26 @@
+draft_id,year,round,pick_number,player_id,college,current_status
+1,2023,1,20,24,Ohio State,Active
+2,2023,2,37,29,UCLA,Active
+3,2023,1,5,22,Illinois,Active
+4,2022,1,9,14,Mississippi State,Active
+5,2022,2,40,4,Michigan State,Active
+6,2021,2,56,10,UTSA,Active
+7,2020,1,27,11,Texas Tech,Active
+8,2020,4,144,23,UTSA,Active
+9,2019,1,29,19,Minnesota,Active
+10,2019,2,47,2,Ole Miss,Active
+11,2018,1,18,35,Western Michigan,Active
+12,2017,3,90,32,Tennessee,Active
+13,2016,1,26,36,Stanford,Active
+14,2015,2,64,3,Kansas State,Active
+15,2014,1,15,30,Oklahoma,Active
+16,2013,2,45,31,Notre Dame,Active
+17,2012,3,75,1,Wisconsin,Traded
+18,2011,1,25,34,West Virginia,Active
+19,2010,2,60,39,Alabama,Active
+20,2009,4,133,40,Texas,Active
+21,2008,3,78,38,Miami,Active
+22,2007,2,43,37,Texas,Active
+23,2006,1,28,33,USC,Active
+24,2005,4,117,28,Oklahoma State,Released
+25,2004,3,83,27,Michigan State,Active
