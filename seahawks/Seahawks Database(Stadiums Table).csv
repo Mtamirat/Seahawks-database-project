@@ -1,0 +1,21 @@
+stadium_id,name,location,capacity,surface_type,weather_history
+1,Lumen Field,"Seattle, WA",68740,FieldTurf,"Rainy, mild temperatures"
+2,Gillette Stadium,"Foxborough, MA",65878,FieldTurf,"Cold winters, moderate summers"
+3,Ford Field,"Detroit, MI",65000,FieldTurf,Dome - controlled climate
+4,Levi's Stadium,"Santa Clara, CA",68500,Bermuda grass,"Mild, sunny conditions"
+5,Highmark Stadium,"Orchard Park, NY",71608,A-Turf Titan,"Cold, snowy winters"
+6,State Farm Stadium,"Glendale, AZ",63400,Bermuda grass,"Hot, dry conditions"
+7,Lincoln Financial Field,"Philadelphia, PA",69176,NexTurf,"Variable, cold winters"
+8,MetLife Stadium,"East Rutherford, NJ",82500,FieldTurf,"Cold winters, humid summers"
+9,Lambeau Field,"Green Bay, WI",81441,Kentucky Bluegrass,Very cold winters
+10,Soldier Field,"Chicago, IL",61500,Bermuda grass,"Cold, windy conditions"
+11,SoFi Stadium,"Los Angeles, CA",70240,Matrix Turf,"Mild, sunny weather"
+12,Paycor Stadium,"Cincinnati, OH",65515,FieldTurf,Variable midwest weather
+13,M&T Bank Stadium,"Baltimore, MD",71608,SportGrass,"Humid summers, cold winters"
+14,AT&T Stadium,"Arlington, TX",80000,Matrix Turf,Dome - controlled climate
+15,Nissan Stadium,"Nashville, TN",69143,Bermuda grass,"Hot summers, mild winters"
+16,Empower Field,"Denver, CO",76125,Kentucky Bluegrass,"High altitude, variable weather"
+17,Mercedes-Benz Stadium,"Atlanta, GA",71929,FieldTurf,Dome - controlled climate
+18,Allegiant Stadium,"Las Vegas, NV",65000,Bermuda grass,"Dome - hot, dry outside"
+19,Hard Rock Stadium,"Miami, FL",65326,Bermuda grass,"Hot, humid, tropical storms"
+20,U.S. Bank Stadium,"Minneapolis, MN",66860,FieldTurf,Dome - very cold outside
