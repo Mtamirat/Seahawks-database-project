@@ -5,3 +5,4 @@ This Enhanced Entity-Relationship diagram represents a comprehensive database sy
 Steps on how to run SQL scripts on GitHub: Local Development Workflow
 
 Clone the repository containing your SQL scripts Connect to your database using your preferred client (MySQL Workbench, pgAdmin, DBeaver, etc.) Execute the scripts locally Commit and push changes back to GitHub
+<img width="960" height="808" alt="Screenshot 2025-08-28 at 1 23 06 PM" src="https://github.com/user-attachments/assets/28872d8a-7e9d-4e48-b2aa-3d782d73b05e" />
