@@ -6,7 +6,13 @@ I designed the Seattle Seahawks database using an 8-table relational structure t
 
 I began the implementation process by creating the MySQL schema using lowercase table names and precise data types as specified in the EER diagram, then imported authentic data from 7 CSV files containing real Seattle Seahawks information from 2022-2024 seasons. I enforced data validation and referential integrity through foreign key constraints, strategic indexing, and validation queries to ensure accuracy across all 160+ records.
 
+I designed intermediate queries such as the home vs away performance analysis that groups games by venue and calculates win percentages, allowing management and media to quickly understand team performance patterns. For example, SELECT home_away, COUNT(*) as games, AVG(seahawks_score) FROM GameResults GROUP BY home_away provides immediate insights into home field advantage.
 Steps on how to run SQL scripts on GitHub: Local Development Workflow
+
+I implemented complex multi-table queries that join 4+ tables to meet the advanced analysis requirements, such as my comprehensive player performance query that combines players, player_statistics, games, and stadiums tables to show individual performance in the context of venue and opponent strength. This query serves analysts who need detailed performance breakdowns with environmental factors.
+
+I created specialized business intelligence queries for management decision-making, including injury impact analysis that calculates estimated salary costs and recovery timelines, helping executives make informed roster decisions. My draft success evaluation query joins draft_history, players, player_statistics, and games tables to assess long-term draft pick performance, enabling strategic planning for future drafts.
+Finally, I developed user-friendly views like InjuryReport and PlayerStats that encapsulate complex joins into simple interfaces, allowing non-technical stakeholders to access sophisticated analysis through straightforward SELECT statements while maintaining the underlying data integrity and relationships.
 
 Clone the repository containing your SQL scripts Connect to your database using your preferred client (MySQL Workbench, pgAdmin, DBeaver, etc.) Execute the scripts locally Commit and push changes back to GitHub
 <img width="960" height="808" alt="Screenshot 2025-08-28 at 1 23 06 PM" src="https://github.com/user-attachments/assets/28872d8a-7e9d-4e48-b2aa-3d782d73b05e" />
