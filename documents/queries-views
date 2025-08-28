@@ -1,1 +1,87 @@
+USE seahawks_db;
+
+SELECT 
+    jersey_number AS "Jersey #",
+    CONCAT(first_name, ' ', last_name) AS "Player Name",
+    position AS "Position",
+    age AS "Age",
+    college AS "College",
+    years_in_nfl AS "NFL Experience",
+    CONCAT('$', FORMAT(salary, 0)) AS "Salary"
+FROM Players 
+WHERE player_id <= 40  
+ORDER BY jersey_number;
+
+SELECT 
+    game_date AS "Game Date",
+    opponent AS "Opponent",
+    home_away AS "Home/Away",
+    seahawks_score AS "Seahawks Score",
+    opponent_score AS "Opponent Score",
+    CASE 
+        WHEN seahawks_score > opponent_score THEN 'WIN'
+        WHEN seahawks_score < opponent_score THEN 'LOSS'
+        ELSE 'TIE'
+    END AS "Result",
+    attendance AS "Attendance"
+FROM Games g
+JOIN Seasons s ON g.season_id = s.season_id
+WHERE s.year = 2024  
+ORDER BY game_date DESC;
+
+SELECT 
+    CONCAT(p.first_name, ' ', p.last_name) AS "Player Name",
+    p.position AS "Position",
+    i.injury_type AS "Injury Type",
+    i.date_occurred AS "Injury Date",
+    i.expected_return AS "Expected Return",
+    i.status AS "Status"
+FROM Players p
+JOIN Injuries i ON p.player_id = i.player_id
+WHERE i.status = 'Active'  
+ORDER BY i.date_occurred DESC;
+
+CREATE VIEW PlayerRoster AS
+SELECT 
+    jersey_number AS jersey_number,
+    CONCAT(first_name, ' ', last_name) AS player_name,
+    position,
+    age,
+    college,
+    years_in_nfl AS nfl_experience,
+    CONCAT('$', FORMAT(salary, 0)) AS salary
+FROM Players 
+WHERE player_id <= 40
+ORDER BY jersey_number;
+
+CREATE VIEW GameResults AS
+SELECT 
+    game_date,
+    opponent,
+    home_away,
+    seahawks_score,
+    opponent_score,
+    CASE 
+        WHEN seahawks_score > opponent_score THEN 'W'
+        WHEN seahawks_score < opponent_score THEN 'L'
+        ELSE 'T'
+    END AS result,
+    (seahawks_score - opponent_score) AS point_difference,
+    attendance
+FROM Games g
+JOIN Seasons s ON g.season_id = s.season_id
+WHERE s.year >= 2023
+ORDER BY game_date DESC;
+
+SELECT 
+    year AS "Season",
+    regular_season_wins AS "Wins",
+    regular_season_losses AS "Losses",
+    CONCAT(regular_season_wins, '-', regular_season_losses) AS "Record",
+    division_ranking AS "Division Rank",
+    playoff_result AS "Playoff Result"
+FROM Seasons
+WHERE year >= 2020  
+ORDER BY year DESC;
+
 
